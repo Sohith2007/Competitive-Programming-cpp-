@@ -49,21 +49,21 @@ int main(){
     cin>>test;
     while(test--){
         int num;
-        cin>>num;
-        vector<int> res;
+        cin>>num;//taking inpurt values in a loop
+        vector<int> res;//vector for output
         int pos=1;
         while(num){
-            int digit = num%10;
-            if(digit!=0){
-                res.push_back(digit*pos);
+            int digit = num%10;//to only deal with every digit in the number
+            if(digit!=0){//checking is the digit is zero
+                res.push_back(digit*pos);//pushing the digit by multiplying the place value
             }
             pos*=10;
-            num/=10; 
+            num/=10; // moving on to the next digit of the num
         }
-        cout<<res.size()<<endl;
+        cout<<res.size()<<endl;//no of summands
         for(int r: res){
             cout<<r<<" ";
-        }
+        }//list of summands
         cout<<endl;
 
     }
