@@ -19,9 +19,9 @@ int main(){
     cin>>x1>>x2>>x3;
 
     int x[3]={x1,x2,x3};
-    sort(x,x+3);
-    int total = (x[1]-x[0])+(x[2]-x[1]);
-    cout<<total<<endl;
+    sort(x,x+3); //finding the median value so that remaining two persons can travel
+    int total = (x[1]-x[0])+(x[2]-x[1]);//calculating the total distance need to be coverd by the persons to reach the median person
+    cout<<total<<endl;//total distance need to be traveled
 
     return 0;
 }
