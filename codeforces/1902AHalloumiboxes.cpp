@@ -23,6 +23,7 @@ int main(){
         else{ // if k<1 that means we cannot reverse an subarray or move an element from its place so we cannot sort the array i.e we print "NO" 
             cout<<"NO"<<endl;
         }
-        return 0;
     }
+    return 0;
+
 }
